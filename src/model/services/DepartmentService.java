@@ -26,6 +26,10 @@ public class DepartmentService {
 		}
 	}
 	
+	public void remove(Department obj) {
+		dao.deleteById(obj.getId());
+	}
+	
 
 //		List<Department> list = new ArrayList<>();
 //		list.add(new Department(1, "Books"));
